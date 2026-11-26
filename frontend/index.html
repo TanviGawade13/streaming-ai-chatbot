@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon_bot</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="app">
+        <header>
+            <h1>Neon_bot</h1>
+            <div class="header-buttons">
+                <button id="settingsBtn" class="ghost">Settings</button>
+                <button id="newChatBtn" class="ghost">New chat</button>
+            </div>
+        </header>
+
+        <section id="settings" class="settings hidden">
+            <label for="systemPrompt">System prompt</label>
+            <textarea id="systemPrompt" rows="3" placeholder="Tell the bot how to behave..."></textarea>
+            <small>Applies to the next message. Leave empty to use the default.</small>
+        </section>
+
+        <main id="chat">
+            <div class="message bot">Hi! I'm Neon_bot. Ask me anything.</div>
+        </main>
+
+        <form id="inputForm">
+            <input id="userInput" type="text" placeholder="Type a message..." autocomplete="off" required />
+            <button id="sendBtn" type="submit">Send</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
